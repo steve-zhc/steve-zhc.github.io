@@ -1,26 +1,37 @@
 # violin&flute workshop
 
-小提琴与长笛音乐教学工具，正式网页地址：
+**[打开网站 · Open the workshop](https://steve-zhc.github.io/)**
 
-**https://steve-zhc.github.io/**
+## 软件介绍 · About
 
-本版本保留乐器模型与指法、每日训练、音阶与节奏训练、节奏接龙、练习记录、错题库、神兽成长和进度备份。练习室模块已按作者决定移除。
+**中文**  
+violin&flute workshop 是面向小提琴与长笛学习的互动音乐教具，将乐器指法、五线谱、音色试听与分级训练融于一体。课堂上，教师可通过投屏演示指法与音符的对应关系，组织识谱、听辨和节奏接龙互动；课后，学生可自主练习音阶琶音、巩固听辨与节奏能力，通过错题复练、练习记录和神兽成长保持学习动力，让课堂所学延续到日常练习。
 
-## 使用
+**English**  
+violin&flute workshop is an interactive learning tool for violin and flute, bringing together fingering, staff notation, sound demonstrations and graded exercises. In class, teachers can project the instrument models to demonstrate how fingerings relate to notes and lead notation, listening and rhythm activities. At home, students can practise scales and arpeggios, strengthen listening and rhythm skills, revisit mistakes and follow their progress, with evolving musical companions adding encouragement along the way.
 
-- 推荐使用较新的 Chrome、Edge 或 Safari，选择电脑或 iPad 布局后开始练习。
-- 首次访问正式网址需要联网；所有核心音色、字体和谱面组件内嵌。
-- 麦克风需要浏览器授权，声音在用户点击后启动。
-- 姓名、成长与练习进度保存在当前浏览器，不上传到服务器。
-- 从本地 HTML 迁移：先在本地“进度备份”导出 JSON，再到正式网址的“进度备份”导入。请勿将个人进度备份提交到本仓库。
-- 单独保存 index.html 后可作为本地离线副本运行；线上网址的离线重开取决于浏览器缓存。
+## 功能概述 · Key features
 
-## 发布与维护
+- **乐器与指法 / Instruments & fingering** — 小提琴与长笛交互模型、指法提示、音名与唱名对应、五线谱显示、音色试听，以及麦克风辅助音高检测。Interactive instrument models, fingering cues, note names and solfège, staff notation, sound playback and microphone-assisted pitch detection.
+- **分级基础训练 / Graded musicianship** — 五级递进的识谱、听音、音程、和弦与旋律复现练习。Five levels of notation, pitch, interval and chord recognition, plus melody recall by selecting solfège in sequence.
+- **音阶与节奏 / Scales & rhythm** — 大小调音阶、琶音与半音阶谱例，支持变速示范和节拍器；节奏训练与接龙提供预备拍、模仿练习及准确率反馈。Major and minor scales, arpeggios and chromatic exercises with adjustable playback and a metronome; rhythm practice and call-and-response activities with count-ins and accuracy feedback.
+- **记录与复习 / Progress & review** — 练习时长曲线、模块准确率、分类错题复练，以及基于作答记录的学习建议。Practice-time charts, accuracy by module, targeted mistake review and suggestions based on recorded answers.
+- **陪伴与适配 / Companions & access** — 六套神兽、五级进化与音乐知识气泡；支持电脑和 iPad 布局、深浅主题及 JSON 进度备份。Six musical companions with five growth stages and musical facts, desktop and iPad layouts, light and dark themes, and JSON progress backups.
 
-`index.html` 是完整、可直接编辑的单文件发布源码，`.nojekyll` 用于直接托管静态文件。原始创作过程和历史版本另存于作者本地的完整归档，不随网站公开发布。
+## 使用说明 · Usage
 
-版本：2026-11-17 正式版。页面源码 SHA-256：
+- 正式网址需要联网访问；保存完整 HTML 可作为本地离线副本使用。The website requires a connection to load; a saved standalone HTML copy can run locally offline.
+- 姓名与学习进度保存在当前设备的当前浏览器中，不会自动跨设备同步。可用“进度备份”导出、导入 JSON；从本地版迁移到网站时也需手动导入。Names and progress are stored in the current browser. Use JSON export/import to back up or transfer progress, including when moving from a local copy to the website.
+- 麦克风需浏览器授权；音高检测用于辅助练习。旋律复现核对点选音序，不检测歌声音准；音阶练习不提供整曲演奏自动评分。Microphone access requires permission. Pitch detection supports practice; melody recall checks selected note sequences rather than sung pitch, and scale exercises do not automatically grade a complete performance.
+- 学习建议由本地练习统计生成，不依赖在线 AI 服务。Learning suggestions are generated from local practice statistics without an online AI service.
+- 推荐使用较新的 Chrome、Edge 或 Safari。声音在用户点击后启动。A recent Chrome, Edge or Safari browser is recommended; sound starts after a user interaction.
+
+## 发布与维护 · Publishing & maintenance
+
+`index.html` 是完整、可编辑的单文件发布源码；核心音色、字体与谱面组件均内嵌，`.nojekyll` 用于直接托管静态文件。个人进度 JSON 和本地创作归档不随网站公开上传。`index.html` is the editable, standalone release source with embedded core sounds, fonts and notation components. Personal progress backups and local creation archives are not published in this repository.
+
+版本 / Release：2026-11-17。页面源码 / HTML SHA-256：
 
 `2fbd48ace5fa5ab52adf6090a5a20e44c35ca0efaaca1827524fa3925d4c3837`
 
-第三方组件、字体和音色来源许可保留在 HTML 的内嵌声明中。公开可访问不代表授权移除这些声明或另行分发受保护内容。
+第三方组件、字体和音色的许可声明保留在 HTML 中；公开访问不代表可移除这些声明或另行分发受保护内容。Third-party component, font and sound licences remain in the HTML; public access does not grant permission to remove these notices or redistribute protected content.
